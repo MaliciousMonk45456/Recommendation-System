@@ -17,5 +17,5 @@ Then for making recommendations for new or existing user we again predict the ra
 To optimize this recommendation procedure for large datasets we precompute the movie vectors by carrying out the inference on the item neural network separately and then when a user wants recommendations we only run inference with the users vector on the user neural network and then obtain the predicted ratings
 This is carried out in two steps called Retrieval and Ranking
 
-Moreover we can find similar movies to a given movie in a similar fashion as done in collaborative filtering which is by computing the decision matrix
+Moreover we can find similar movies to a given movie in a similar fashion as done in collaborative filtering which is by computing the decision matrix and for new movies we can compute the vm for that specific movie and compute its distance from other movies to find similar movies.
 
